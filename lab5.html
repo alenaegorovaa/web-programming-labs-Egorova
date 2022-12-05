@@ -48,7 +48,7 @@
                 float: left;
                 width: 200px;
                 height: 50px; 
-                border: 4px double #1f76f9;
+                border: 5px solid #1f76f9;
                 border-radius: 40px;
                 text-align: center;
             }
@@ -59,9 +59,28 @@
                 float: right;      
                 width: 200px;
                 height: 50px; 
-                border: 4px double #1f76f9;
+                border: 5px solid #1f76f9;
                 border-radius: 40px;
                 text-align: center;
+            }
+            .f {
+                color: #333;
+                background-color: #9cd5fc;             
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+                padding: 20px;
+                font-size: 40px;      
+                border: 5px solid #1f76f9;
+                border-radius: 40px;
+                width: 300px;
+                height: 100px; 
+                position: relative;
+            }
+            .f:hover {
+                background-color: #e29aff;
+                color:rgb(68, 255, 0);
+                text-shadow: 3px 3px 5px rgb(0, 255, 204);
+                z-index: 1;
             }
         </style>   
     </head>
@@ -108,6 +127,13 @@
                 Зимы блистательным ковром<br>
                 Все ярко, все бело кругом.
             </div>
+
+            <h1>Лесенка</h1>
+            <div class="f" style="top: -20px; left: 65px;">Блок А</div>
+            <div class="f" style="top: -50px; left: 95px;">Блок Б</div>
+            <div class="f" style="top: -80px; left: 125px;">Блок В</div>
+            <div class="f" style="top: -110px; left: 155px;">Блок Г</div>
+            <div class="f" style="top: -140px; left: 185px;">Блок Д</div>
         </div>
         <div class="footer">
             Факультет бизнеса, ФБИ-01, 3 курс, 2022 
