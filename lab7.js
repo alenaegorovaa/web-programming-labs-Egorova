@@ -84,3 +84,12 @@ function makePoet() {
     }
 }
 
+function makeTable() {
+    let tab = document.getElementById('table');
+    let tabCount = 9;
+    for(let i = 1; i<=tabCount; i++) {
+        tab.innerHTML += `<div class="table-item">29 * ${i} = ${17*i}</div>`;
+    }
+
+}
+
