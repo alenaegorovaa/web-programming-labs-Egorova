@@ -4,8 +4,6 @@ function showDate(params) {
     out.innerHTML = 'Сегодня: ' + today.toLocaleDateString ('ru-RU');
 }
 
-window.addEventListener('load', showDate);
-
 function showDaysCount(params){
     let today = new Date();
     let inputDate = document.querySelector('input[type=date]');
@@ -17,3 +15,12 @@ function showDaysCount(params){
 }
 
 window.addEventListener('load', showDate);
+
+function showTime() {
+    let outTime = document.getElementById('time');
+    let currentTime = new Date();
+    outTime.innerHTML = currentTime.toLocaleTimeString('ru');
+}
+
+window.addEventListener('load', showTime);
+setInterval(showTime, 1000);
